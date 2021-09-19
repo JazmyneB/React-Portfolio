@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
+import Portfolio from './components/Portfolio'
 // import Gallery from './components/Gallery';
 // import ContactForm from './components/Contact';
 
@@ -11,6 +12,7 @@ function App() {
       <Nav></Nav>
       <main>
       <About></About>
+      <Portfolio></Portfolio>
       </main>
     </div>
   );
