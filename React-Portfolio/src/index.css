@@ -34,13 +34,13 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: .1em;
-  background: var(--dark);
+  background: #1F5673;
   color: var(--light);
-  font-family: 'Poiret One', cursive;
+  font-family: 'Bradley Hand';
 
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -50,9 +50,9 @@ h6 {
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
-}
+} */
 
-h1 {
+/* h1 {
   font-size: 2.25rem;
 }
 
@@ -74,7 +74,7 @@ h5 {
 
 h6 {
   font-size: 1rem;
-}
+} */
 
 p {
   font-size: 1.1rem;
@@ -87,16 +87,40 @@ a {
   font-weight: bold;
 }
 
-a:hover {
+/* a:hover {
   text-decoration: underline;
-}
+} */
 
 header {
-  background: var(--dark);
+  background: #B9B8D3;
+  margin: auto;
+  padding: 30px;
+  height: 120px;
+  text-align: right;
 }
 
-header a {
+.sect {
   color: var(--light);
+  width: 50%;
+  margin: auto;
+  padding: 15px;
+  border: solid;
+}
+
+
+
+.dev {
+  color: var(--light);
+  text-align: left;
+  font-size: xx-large;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  float: left;
+}
+
+header h2 {
+  font-family: 'Lucida Handwriting';
 }
 
 button {
@@ -124,9 +148,9 @@ img {
   max-width: 100%;
 }
 
-span[role="img"] {
+/* span[role="img"] {
   cursor: default;
-}
+} */
 
 form {
   width: 40%;
@@ -150,8 +174,13 @@ li {
   list-style: none;
 }
 
+nav{
+  font-family: 'Lucida Handwriting';
+}
+
 nav a:hover {
-  text-decoration: none;
+  text-decoration: underline overline;
+  color:#462730;
 }
 
 nav  li {
@@ -280,7 +309,7 @@ button {
 	padding: 10px 15px;	
 }
 
-a {
+/* a {
 	border-radius: 5px;
 	color: var(--primary);
 	font-weight: 600;
@@ -288,7 +317,7 @@ a {
 	margin-left: -2px;
 	margin-right: -2px;
 	
-}
+} */
 
 .navActive {
   color: var(--secondary);
