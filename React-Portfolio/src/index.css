@@ -76,6 +76,9 @@ h6 {
   font-size: 1rem;
 } */
 
+h1 {
+  font-size: 2.25rem;
+}
 p {
   font-size: 1.1rem;
   margin-top: 0;
@@ -91,6 +94,7 @@ a {
   text-decoration: underline;
 } */
 
+/* Header Styling */
 header {
   background: #B9B8D3;
   margin: auto;
@@ -98,16 +102,23 @@ header {
   height: 120px;
   text-align: right;
 }
-
-.sect {
-  color: var(--light);
-  width: 50%;
-  margin: auto;
-  padding: 15px;
-  border: solid;
+ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
 }
 
-
+li .sect {
+  color: var(--light);
+}
 
 .dev {
   color: var(--light);
@@ -121,6 +132,52 @@ header {
 
 header h2 {
   font-family: 'Lucida Handwriting';
+}
+
+
+
+/* Portfolio Styling */
+.img-container {
+  position: relative;
+  width: 50%
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-80%, -40%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: left;
+
+}
+.img-container:hover .image {
+  opacity: 0.3;
+}
+.img-container:hover .middle {
+  opacity: 1;
+}
+.text {
+  color: #462730;
+  background-color: #90C3C8;
+  font-size: 15px;
+  padding: auto;
+}
+
+
+.skills {
+  display: list-item;
+  list-style-type: circle;
+  list-style-position: inside;
 }
 
 button {

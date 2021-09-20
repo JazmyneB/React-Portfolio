@@ -2,17 +2,35 @@ import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
 import Portfolio from './components/Portfolio'
-// import Gallery from './components/Gallery';
-// import ContactForm from './components/Contact';
+import Resume from './components/Resume';
+import ContactForm from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
 
+  const [currentPage, setPage] = useState('about');
+
+  const switchPage = () => {
+    switch (currentPage) {
+      case 'about':
+        return <About />
+      case 'portfolio':
+        return <Portfolio/>
+      case 'contact':
+        return <ContactForm />
+      case 'resume':
+        return <Resume />
+    }
+  }
+
   return (
     <div>
-      <Nav></Nav>
+      <Nav currenPage={currentPage} setPage={setPage}></Nav>
       <main>
-      <About></About>
-      <Portfolio></Portfolio>
+      {
+        switchPage(currentPage)
+      }
+      <Footer></Footer>
       </main>
     </div>
   );
