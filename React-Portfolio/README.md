@@ -1,6 +1,23 @@
-# Getting Started with Create React App
+# React Portfolio
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Table of Contents
+* [Description](#description)
+* [Available Scripts](#availablescripts)
+* [Learn More](#learnmore)
+
+## Description
+
+This is a portfolio that puts my work in one visula platform. In my portfolio, you're able to contact me, read about me, view my resume and also check out my projects that I completed. 
+
+![alt text](./homepage.jpeg "About Me")
+![alt text](./projects.jpeg "Projects")
+![alt text](./resume.jpeg "Resume")
+
+### Deployed Link
+
+http://JazmyneB.github.io/react-portfolio
 
 ## Available Scripts
 
